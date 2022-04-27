@@ -118,7 +118,7 @@ def pregunta_04():
         analyzer=analyzer,
         lowercase=True,
         stop_words="english",
-        #token_pattern=r"(?u)\b[a-zA-Z][a-zA-Z]+\b",
+        token_pattern=r"(?u)\b[a-zA-Z][a-zA-Z]+\b",
         binary=True,
         max_df=1.0,
         min_df=5,
@@ -136,7 +136,7 @@ def pregunta_04():
     # considerar 10 valores entre 0.1 y 1.0 para el parámetro alpha de
     # BernoulliNB.
     param_grid = {
-        "param": np.random.uniform(low=0.1, high=1.0, size=(10)),
+        "BernoulliNB__param": np.random.uniform(low=0.1, high=1.0, size=(10)),
     }
 
     # Defina una instancia de GridSearchCV con el pipeline y el diccionario de
