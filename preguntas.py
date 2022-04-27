@@ -80,7 +80,7 @@ def pregunta_03():
     stemmer = PorterStemmer()
 
     # Cree una instancia del analizador de palabras (build_analyzer)
-    analyzer = pregunta_02().__getattribute__("x_train")
+    analyzer = pregunta_02().__getitem__(0)
 
     # Retorne el analizador de palabras
     return lambda x: (stemmer.stem(w) for w in analyzer(x))
