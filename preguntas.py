@@ -129,7 +129,7 @@ def pregunta_04():
         steps=[
             ("CountVectorizer", countVectorizer),
             ("BernoulliNB", BernoulliNB()),
-        ],
+        ]
     )
 
     # Defina un diccionario de parámetros para el GridSearchCV. Se deben
